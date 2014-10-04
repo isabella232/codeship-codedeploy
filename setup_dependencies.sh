@@ -1,3 +1,5 @@
+mkdir ~/codedeploy
+cd ~/codedeploy
 sed -i 's/aws sds/aws deploy/g' ~/bin/sds_deployment_check
 pip install awscli
 aws s3 cp --recursive s3://razorbill-us-east-1-prod-default-distribution/latest .
