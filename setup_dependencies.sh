@@ -1,3 +1,8 @@
+#!/bin/bash
+
+set -e
+set -x
+
 pip install awscli
 sed -i 's/aws sds/aws deploy/g' ~/bin/sds_deployment_check
 mkdir -p /tmp/botocore/data/aws/codedeploy/
