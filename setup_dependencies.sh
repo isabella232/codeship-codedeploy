@@ -11,6 +11,6 @@ aws s3 cp s3://razorbill-us-east-1-prod-default-distribution/latest/2014-10-06.a
 export AWS_DATA_PATH=/tmp/botocore/data
 aws s3 cp --recursive s3://razorbill-us-east-1-prod-default-distribution/latest .
 ls -lA
-pip install awscli-1.5.4.tar.gz
+pip install awscli-1.5.6.tar.gz
 aws deploy list-applications
 cd ~/clone
