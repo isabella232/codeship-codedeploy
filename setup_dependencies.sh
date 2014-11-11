@@ -4,7 +4,6 @@ set -e
 set -x
 
 pip install awscli
-sed -i 's/aws sds/aws deploy/g' ~/bin/sds_deployment_check
 mkdir -p /tmp/botocore/data/aws/codedeploy/
 cd /tmp/botocore/data/aws/codedeploy/
 aws s3 cp s3://razorbill-us-east-1-prod-default-distribution/latest/2014-10-06.api.json .
